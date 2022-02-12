@@ -1,13 +1,196 @@
 body {
+  color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  color: white;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.defaultbutton{
+  color: black;
+  cursor: pointer;
+  background-color: gold;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px 15px;
+  border: none;
+  text-align: center;
+}
+
+/*NAVIGATION COMPONENTS*/
+.navbarContainer{
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  border-bottom: 1px solid gold;
+}
+
+.navbarMenu{
+  display: flex;
+  width: 40%;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.navbarMenu a{
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+/*LANDING PAGE COMPONENTS*/
+
+
+.landingPage{
+  height: 80vh;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+
+.landingPage-content{
+  
+  width: 50%;
+  
+}
+
+
+.landingPage-buttons a{
+  color: black;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: gold;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px 15px;
+  border: none;
+  text-align: center;
+}
+
+.landingPage-buttons a:active{
+
+  background-color: white;
+}
+
+
+
+
+/*CONTACT US COMPONENTS*/
+
+.contactPage-container h1{
+  font-size: 2rem;
+}
+
+
+.contactPage-container{
+  
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.contactPage-form{
+  border-radius: 10px;
+  width:50% ;
+  background-color: #363636;
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+
+  
+}
+
+.contactPage-form div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  
+}
+
+
+
+.contactPage-form div label{
+  
+  font-size: medium;
+  margin: 5px 0;
+}
+
+.contactPage-form div input{
+  border-radius: 5px;
+  height: 25px;
+  
+}
+
+.contactPage-form div input,.contactPage-form div textarea{
+  font-size: 1rem;
+  outline:none;
+  border: none;
+  
+}
+
+
+.contactPage-form div input:focus,.contactPage-form div textarea:focus{
+  border: gold solid 2px;
+  
+}
+
+
+
+
+
+/*PROJECT COMPONENTS*/
+
+
+.projectWrapper{
+  height: 85vh;
+}
+
+.projectsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectsContainer div{
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #363636;
+  text-align: left;
+  width: 200px;
+}
+
+.projectsContainer div a{
+  text-align: center;
 }
