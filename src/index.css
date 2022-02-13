@@ -173,24 +173,70 @@ textarea {
 
 
 .projectWrapper{
-  height: 85vh;
-}
-
-.projectsContainer{
+  
+  margin: 25px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  
+
 }
+
+
+
+.projectsContainer{
+  
+  
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  column-gap: 100px;
+  
+}
+
 
 .projectsContainer div{
-  padding: 20px;
-  margin: 20px 0;
   background-color: #363636;
-  text-align: left;
-  width: 200px;
+  text-align: center;
+  display: flex;
+  padding: 5px;
+  border-radius: 15px;
+  
 }
 
-.projectsContainer div a{
-  text-align: center;
+
+
+.projectWithImage{
+  display: flex;
+  justify-content: center;
+}
+
+.projectContent{
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  
+}
+
+
+
+.projectWithImage img{
+  border-radius: 15px;
+  height: 250px;
+}
+
+.projectContent a{
+  margin: 5px;
+  display: flex;
+  font-size: 1rem ;
+
+  
+}
+
+.projectContent a:active{
+  background-color: white;
+
+  
 }

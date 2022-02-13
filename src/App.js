@@ -4,20 +4,32 @@ import {Routes , Route} from "react-router-dom";
 import ContactPage from "./components/contactComponents/ContactPage.js";
 import ProjectsWrapper from "./components/projectsComponent/ProjectsWrapper.js";
 import {useState, useEffect} from "react";
+import {collection, getDocs} from "firebase/firestore";
+import {db} from "./firebase-config.js";
+
 
 function App() {
 
+  const projectsCollectionRef = collection(db, "projects");
   const [pinnedProjects, setPinnedProjects] = useState([]);
 
-    useEffect(()=>{
-        fetch("https://gh-pinned-repos.egoist.sh/?username=adil-sadout")
-        .then(res => res.json())
-        .then(data => {
-          setPinnedProjects(data)
-        })
-        .catch(err => console.log(err))
-    },
-    [])
+
+  const projectList = async ()=>{
+    const data = await getDocs(projectsCollectionRef);
+    console.log(data);
+    setPinnedProjects(data.docs.map ((doc)=> ({...doc.data(), id:doc.id}) ))
+    console.log(pinnedProjects);
+  }
+
+  
+
+  useEffect(()=>{
+    projectList();
+
+  },[])
+
+
+
 
 
   return (
@@ -28,7 +40,7 @@ function App() {
         <Route exact path="/projects" element={<ProjectsWrapper pinnedProjects={pinnedProjects} />} />
         <Route exact path="/contact" element={<ContactPage/>}/>
         <Route path="*" element="error 404"/>
-      </Routes> 
+      </Routes>
     </div>
   );
 }
