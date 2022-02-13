@@ -184,13 +184,10 @@ textarea {
 
 
 .projectsContainer{
-  
-  
   display: inline-grid;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
-  column-gap: 100px;
+  column-gap: 80px;
   
 }
 
@@ -206,10 +203,6 @@ textarea {
 
 
 
-.projectWithImage{
-  display: flex;
-  justify-content: center;
-}
 
 .projectContent{
   
@@ -228,7 +221,7 @@ textarea {
 }
 
 .projectContent a{
-  margin: 5px;
+  margin: 0 5px;
   display: flex;
   font-size: 1rem ;
 
