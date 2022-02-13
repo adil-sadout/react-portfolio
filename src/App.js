@@ -10,22 +10,22 @@ import {db} from "./firebase-config.js";
 
 function App() {
 
-  const projectsCollectionRef = collection(db, "projects");
+  
   const [pinnedProjects, setPinnedProjects] = useState([]);
 
 
-  const projectList = async ()=>{
-    const data = await getDocs(projectsCollectionRef);
-    console.log(data);
-    setPinnedProjects(data.docs.map ((doc)=> ({...doc.data(), id:doc.id}) ))
-    console.log(pinnedProjects);
-  }
 
+  
   
 
   useEffect(()=>{
-    projectList();
 
+    const getProjects = async()=>{
+      const projectsCollectionRef = collection(db, "projects");
+      const data = await getDocs(projectsCollectionRef);
+      setPinnedProjects(data.docs.map ((doc)=> ({...doc.data(), id:doc.id}) ))
+    }
+    getProjects();
   },[])
 
 
