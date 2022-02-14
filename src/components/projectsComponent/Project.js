@@ -9,8 +9,8 @@ export default function Project({project}){
                 <h2>{project.name}</h2>
                 <p>{project.description}</p>
                 <div>
-                    <a class="defaultbutton" href={project.livesite} target="_blank" rel="noreferrer" >Live Site</a>
-                    <a class="defaultbutton" href={project.sourcecode} target="_blank" rel="noreferrer" >Source Code</a>
+                    <a className="defaultbutton" href={project.livesite} target="_blank" rel="noreferrer" >Live Site</a>
+                    <a className="defaultbutton" href={project.sourcecode} target="_blank" rel="noreferrer" >Source Code</a>
                 </div>
                 
             </div>

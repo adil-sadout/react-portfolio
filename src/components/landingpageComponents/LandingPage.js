@@ -5,7 +5,7 @@ export default function LandingPage(){
         <div className="landingPage">
             <div className="landingPage-content">
                 <h1>Hello, I'm Adil, Front End Engineer, And Your Next Website Creator :)</h1>
-                <p >You will find all you need to know about my previous experiences, projects, and contact information</p>
+                <p >You will find all you need to know about my previous experiences, projects, and contact information by checking the links below</p>
             </div>
             <div className="landingPage-buttons">
                 <NavLink to="/projects" >Projects</NavLink>
