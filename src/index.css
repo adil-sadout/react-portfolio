@@ -217,7 +217,7 @@ textarea {
 
 .projectWithImage img{
   border-radius: 15px;
-  height: 250px;
+  width: 400px;
 }
 
 .projectContent a{
