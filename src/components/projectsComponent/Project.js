@@ -2,7 +2,7 @@
 
 export default function Project({project}){
     return(
-        <div className="d-flex col-lg-6 justify-content-center align-items-center gy-5">
+        <div className="d-flex flex-column flex-sm-row col-lg-6 justify-content-center align-items-center gy-5">
             <div className="px-1 w-50">
                 <img src={project.image} className="img-thumbnail w-100" alt={project.name} />
             </div>
