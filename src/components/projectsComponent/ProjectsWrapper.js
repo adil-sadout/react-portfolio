@@ -12,7 +12,7 @@ export default function ProjectsWrapper({pinnedProjects}){
 
 
     return(
-        <div className="projectWrapper">
+        <div className="projectWrapper container grid">
             <Projects pinnedProjects={pinnedProjects} />
         </div>
     )

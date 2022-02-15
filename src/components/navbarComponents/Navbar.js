@@ -1,11 +1,17 @@
-import NavMenu from "./NavMenu.js"
+import NavMenu from "./NavMenu.js";
+
+
 
 export default function Navbar(){
     return(
-        <div className="navbarContainer">
-            <h2>:=3</h2>
+        <div className="d-flex bg-dark bg-opacity-75 p-2">
+            <div className="container d-flex justify-content-between align-items-center ">
+                <a href="/" className="link-light navbar-header h1 mr-3 mb-0  nav-link">
+                    Adil Sadout
+                </a>
+                <NavMenu/>
+            </div>
             
-            <NavMenu/>
         </div>
     )
 }

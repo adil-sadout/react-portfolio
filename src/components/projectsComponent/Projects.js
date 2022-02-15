@@ -6,7 +6,7 @@ export default function Projects({pinnedProjects}){
         <>
         {
             (pinnedProjects.length >0) &&
-            <div  className="projectsContainer">
+            <div  className="row m-auto">
                 {pinnedProjects.map((project, index) => <Project key={index} project={project} />)}
             </div>
         }

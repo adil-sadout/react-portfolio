@@ -34,7 +34,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App text-light vh-100">
       <Navbar/>
       <Routes >
         <Route exact path="/" element={<LandingPage/>} />

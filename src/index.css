@@ -1,3 +1,5 @@
+/*
+
 body {
   color: white;
   margin: 0;
@@ -30,7 +32,7 @@ textarea {
   text-align: center;
 }
 
-/*NAVIGATION COMPONENTS*/
+/*NAVIGATION COMPONENTS*//*
 .navbarContainer{
   background-color: #202020;
   display: flex;
@@ -61,7 +63,7 @@ textarea {
 
 
 
-/*LANDING PAGE COMPONENTS*/
+/*LANDING PAGE COMPONENTS*//*
 
 
 .landingPage{
@@ -103,7 +105,7 @@ textarea {
 
 
 
-/*CONTACT US COMPONENTS*/
+/*CONTACT US COMPONENTS*//*
 
 .contactPage-container h1{
   font-size: 2rem;
@@ -169,7 +171,7 @@ textarea {
 
 
 
-/*PROJECT COMPONENTS*/
+/*PROJECT COMPONENTS*//*
 
 
 .projectWrapper{
@@ -232,4 +234,9 @@ textarea {
   background-color: white;
 
   
+}*/
+
+
+body{
+  background-color: #2E3236;
 }

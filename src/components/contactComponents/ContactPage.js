@@ -50,38 +50,38 @@ export default function ContactPage(){
     }
 
     return(
-        <div className="contactPage-container">
+        <div className="contactPage-container container d-flex justify-content-center py-5 align-items-center flex-column">
             <h1>Contact Form</h1>
-            <form className="contactPage-form" onSubmit={submitForm}>
-                <div>
-                    <label htmlFor="name" >
+            <form className="contactPage-form container-fluid" onSubmit={submitForm}>
+                <div className="d-flex flex-column">
+                    <label htmlFor="name"  className="pt-3" >
                         Name*
                     </label>
-                    <input type="text" name="name" value={formInfo.name} onChange={valueChanged} required/>
+                    <input type="text" name="name" className="rounded border-0" value={formInfo.name} onChange={valueChanged} required/>
                 </div>
 
-                <div>
-                    <label htmlFor="company" >
+                <div className="d-flex flex-column">
+                    <label htmlFor="company"  className="pt-3" >
                         Company*
                     </label>
-                    <input type="text" name="company" value={formInfo.company} onChange={valueChanged} required/>
+                    <input type="text" name="company" className="rounded border-0" value={formInfo.company} onChange={valueChanged} required/>
                 </div>
 
-                <div>
-                    <label htmlFor="email" >
+                <div className="d-flex flex-column">
+                    <label htmlFor="email"  className="pt-3" >
                         E-mail Address*
                     </label>
-                    <input type="email" name="email" value={formInfo.email} onChange={valueChanged} required/>
+                    <input type="email" name="email" className="rounded border-0" value={formInfo.email} onChange={valueChanged} required/>
                 </div>
 
-                <div>
-                    <label htmlFor="message" >
+                <div className="d-flex flex-column">
+                    <label htmlFor="message"  className=" pt-3" >
                         Message* (limit= 500 char)
                     </label>
-                    <textarea rows = "10"  maxLength = "500" type="text" name="message" value={formInfo.message} onChange={valueChanged} required/>
+                    <textarea className="rounded border-0" rows = "10"  maxLength = "500" type="text" name="message" value={formInfo.message} onChange={valueChanged} required/>
                 </div>
 
-                <input className="defaultbutton" type="submit" value="Send"/>
+                <input className="defaultbutton btn btn-warning container-fluid my-3 btn-lg" type="submit" value="Send"/>
             </form>
 
             {
