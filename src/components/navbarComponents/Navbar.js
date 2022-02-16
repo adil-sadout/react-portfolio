@@ -1,8 +1,9 @@
 import NavMenu from "./NavMenu.js";
-
+import NavHamburger from "./NavHamburger.js"
 
 
 export default function Navbar(){
+
     return(
         <div className="d-flex bg-dark bg-opacity-75 p-2">
             <div className="container d-flex justify-content-between align-items-center ">
@@ -10,6 +11,7 @@ export default function Navbar(){
                     Adil Sadout
                 </a>
                 <NavMenu/>
+                <NavHamburger/>
             </div>
             
         </div>

@@ -240,3 +240,11 @@ textarea {
 body{
   background-color: #2E3236;
 }
+
+#navbarHamburger::after{
+  content: none;
+}
+
+.NavDropdownBackground :hover{
+  background-color: red;
+}
