@@ -12,11 +12,11 @@ export default function NavHamburger() {
         title={<FontAwesomeIcon className='text-white display-6'  icon={faBars}/>}
         >
             <NavDropdown.Item href="/">
-                <a>Home</a>
+                Home
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="projects">
-                <a>Projects</a>
+            <NavDropdown.Item href="/projects">
+                Projects
             </NavDropdown.Item>
 
             <NavDropdown.Divider />
@@ -28,7 +28,7 @@ export default function NavHamburger() {
             <NavDropdown.Divider />
 
             <NavDropdown.Item href="/contact">
-                <a>Contact</a>
+                Contact
             </NavDropdown.Item>
 
         </NavDropdown>
