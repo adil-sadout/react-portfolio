@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 import { Navbar, Container, Offcanvas, Nav } from 'react-bootstrap';
 import {Link} from "react-router-dom"
 
@@ -27,7 +26,7 @@ export default function NavHamburger() {
                     <Link className=' text-light text-decoration-none mb-4'  to="/Projects">
                         Projects
                     </Link>
-                    <a className=' text-light text-decoration-none mb-4' target="_blank" href="https://github.com/adil-sadout">
+                    <a className=' text-light text-decoration-none mb-4' rel="noreferrer" target="_blank" href="https://github.com/adil-sadout">
                         Github
                     </a>
                     <Link className=' text-light text-decoration-none mb-4'  to="/Contact">
