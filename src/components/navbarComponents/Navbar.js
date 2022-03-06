@@ -12,6 +12,7 @@ export default function Navbar(){
                 </a>
                 <NavMenu/>
                 <NavHamburger/>
+                
             </div>
             
         </div>
