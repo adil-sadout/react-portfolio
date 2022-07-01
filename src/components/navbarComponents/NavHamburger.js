@@ -6,7 +6,7 @@ export default function NavHamburger() {
   return (
     
     <div className='d-md-none d-flex'>
-        <Navbar expand={false}  className='text-light '>
+        <Navbar expand={false} bg="transparent" variant="dark" className='text-light'>
         <Container  fluid >
             <Navbar.Toggle aria-controls="offcanvasNavbar" />
             <Navbar.Offcanvas
@@ -20,9 +20,7 @@ export default function NavHamburger() {
             </Offcanvas.Header>
             <Offcanvas.Body className='bg-dark'>
                 <Nav className="justify-content-end flex-grow-1 pe-3 text-center display-1">
-                    <Link className=' text-light text-decoration-none mb-4' to="/">
-                        Home
-                    </Link>
+                    
                     <Link className=' text-light text-decoration-none mb-4'  to="/Projects">
                         Projects
                     </Link>

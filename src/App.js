@@ -6,7 +6,7 @@ import ProjectsWrapper from "./components/projectsComponent/ProjectsWrapper.js";
 import {useState, useEffect} from "react";
 import {collection, getDocs} from "firebase/firestore";
 import {db} from "./firebase-config.js";
-
+import ParticlesBack from "./components/particles/ParticlesBack"
 
 
 function App() {
@@ -35,7 +35,13 @@ function App() {
 
   return (
     <div className="App text-light vh-100">
+
+      <ParticlesBack/>
+      
       <Navbar/>
+      
+      
+      
       <Routes >
         <Route exact path="/" element={<LandingPage/>} />
         <Route exact path="/projects" element={<ProjectsWrapper pinnedProjects={pinnedProjects} />} />

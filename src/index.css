@@ -237,9 +237,12 @@ textarea {
 }*/
 
 
+
+
 body{
-  background-color: #2E3236;
+  background-color: green;
 }
+
 
 #navbarHamburger::after{
   content: none;
