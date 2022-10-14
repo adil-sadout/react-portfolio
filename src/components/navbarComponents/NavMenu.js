@@ -13,10 +13,14 @@ export default function NavMenu(){
             <a className=' link-light mx-2 nav-link' rel="noreferrer" target="_blank" href="https://github.com/adil-sadout">
                 Github
             </a>
-            
-            <a className=' text-info mx-5 nav-link' rel="noreferrer" target="_blank" href="assets/adilsadout.pdf">
+            {
+                /*
+                    <a className=' text-info mx-5 nav-link' rel="noreferrer" target="_blank" href="assets/adilsadout.pdf">
                 Resume
-            </a>
+                </a>
+            */ 
+            }
+            
         </div>
     )
 }
